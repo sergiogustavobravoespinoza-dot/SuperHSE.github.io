@@ -8,3 +8,56 @@
 @media(max-width:680px){.container{width:min(100% - 36px,500px)}.site-header{height:68px}.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:68px;left:0;width:100%;padding:18px;flex-direction:column;align-items:stretch;gap:0;background:#102b4e;border-bottom:1px solid #ffffff22}.main-nav.open{display:flex}.main-nav a{padding:13px 8px}.main-nav .nav-cta{text-align:center;margin-top:8px}.hero{padding-top:110px;min-height:0}.hero-grid{grid-template-columns:1fr;gap:0}.hero-copy{padding:0 0 7px}.eyebrow{font-size:9px}h1{font-size:46px;letter-spacing:-2px;max-width:500px}.hero-lead{font-size:14px}.hero-actions{gap:17px;flex-wrap:wrap}.button{min-height:47px;padding:0 16px;font-size:12px}.text-link{font-size:12px}.hero-proof{margin-top:22px}.hero-visual{height:350px;transform:none;margin:4px -10px 0}.dashboard-window{transform:none;width:100%}.dashboard-content{padding:17px 15px 13px}.format-badge{right:0;top:30px}.floating-card{left:0;bottom:15px}.hero-bottom{height:54px;font-size:8px;letter-spacing:.5px}.hero-bottom span:last-child{max-width:145px;text-align:right}.section{padding:68px 0}.intro-grid{grid-template-columns:1fr;gap:20px}.intro h2,.section-heading h2,.formats-copy h2,.benefits-heading h2{font-size:35px}.intro-copy p{font-size:14px}.modules{padding:68px 0}.section-heading{display:block;margin-bottom:25px}.section-heading p{margin-top:15px}.module-grid{gap:10px}.module-card{min-height:190px;padding:17px 14px}.module-card h3{font-size:13px}.module-card p{font-size:10.5px}.module-icon{margin-bottom:12px}.formats-section{padding:68px 0}.formats-grid{grid-template-columns:1fr;gap:35px}.formats-art{height:290px}.formats-copy h2{font-size:33px}.subscription-section{padding:68px 0}.subscription-grid{grid-template-columns:1fr;gap:14px}.subscription-card{padding:24px}.payment-note{padding:19px}.benefits{padding:68px 0}.benefit-row{grid-template-columns:1fr;gap:23px;margin-top:36px}.benefit-row article{padding-top:16px}.cta-section{padding:65px 0}.cta-content h2{font-size:37px}.cta-content p{line-height:1.7}.footer-content{flex-wrap:wrap;gap:10px 18px}.footer-content p{width:calc(100% - 150px);text-align:right}.copyright{width:100%;margin:7px 0 0}.dashboard-bottom{gap:8px}.dashboard-bottom>span{font-size:7px}}
 @media(max-width:390px){h1{font-size:41px}.hero-actions{gap:13px}.text-link{font-size:11px}.dashboard-window{width:calc(100% - 5px)}.dashboard-content{padding-left:12px;padding-right:12px}.floating-card{padding:9px 11px}.format-badge{padding:9px 11px}.module-card{min-height:202px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Suscripción: detalle de planes y flujo de pago */
+.subscription-grid{max-width:980px;align-items:stretch;gap:22px}
+.subscription-card{position:relative;display:flex;flex-direction:column;padding:32px;border-radius:16px}
+.subscription-featured{border:2px solid #3478ed;padding:31px}
+.recommended-badge{position:absolute;top:0;right:0;padding:8px 13px;border-radius:0 12px 0 12px;background:linear-gradient(135deg,#3478ed,#205fc8);color:white;font-size:9px;font-weight:800;letter-spacing:.7px}
+.subscription-card h3{font-size:21px;line-height:1.3;margin:15px 0 8px}
+.subscription-card .plan-description{color:var(--muted);font-size:12px;line-height:1.7;min-height:61px;margin:0 0 18px}
+.plan-price-wrap{display:flex;align-items:baseline;gap:9px;padding:0 0 15px;margin-bottom:16px;border-bottom:1px solid #e8edf4}
+.plan-price-wrap .plan-price{font-size:38px;margin:0}
+.plan-price-wrap>span{font-size:11px;color:var(--muted)}
+.plan-highlight{display:flex;gap:8px;align-items:flex-start;color:#158558;font-size:11px;font-weight:700;line-height:1.5;margin:0 0 20px}
+.plan-highlight>span{font-size:16px;line-height:1}
+.subscription-card h4{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:#4b6079;margin:0 0 10px}
+.plan-features{list-style:none;padding:0;margin:0 0 22px;flex:1}
+.plan-features li{position:relative;padding-left:22px;margin:0 0 10px;color:#52657a;font-size:11px;line-height:1.55}
+.plan-features li:before{content:"✓";position:absolute;left:0;top:0;color:#20a96e;font-weight:800;font-size:14px}
+.plan-features li.feature-unavailable{color:#99a3b0;text-decoration:line-through;margin-top:14px}
+.plan-features li.feature-unavailable:before{content:"×";color:#e95854}
+.subscription-card .plan-select{margin-top:auto;justify-content:space-between}
+.payment-panel{max-width:980px;margin:30px auto 0;padding:35px;border:1px solid #e2eaf2;border-top:5px solid var(--green);border-radius:15px;background:linear-gradient(145deg,#fff,#f8fafc);scroll-margin-top:24px;box-shadow:0 12px 32px rgba(18,48,84,.06)}
+.payment-heading{text-align:center;margin-bottom:27px}
+.payment-heading h3{font-size:25px;letter-spacing:-.7px;margin:10px 0}
+.payment-heading>p{color:var(--muted);font-size:12px;line-height:1.7;margin:0}
+.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.payment-details{padding:24px;border:1px solid #e2e8f0;border-radius:12px;background:white;text-align:center}
+.wallet-badges{display:flex;justify-content:center;gap:12px;margin-bottom:20px}
+.wallet-badges span{padding:9px 16px;border-radius:7px;color:white;font-size:14px;font-weight:800;letter-spacing:.7px;box-shadow:0 5px 12px #102b4e18}
+.yape-badge{background:#742284}.plin-badge{background:#00a9ce}
+.payment-details>small{display:block;color:#78879a;font-size:9px;font-weight:800;letter-spacing:1px}
+.payment-phone{display:flex;align-items:center;justify-content:center;gap:10px;margin:7px 0 17px}
+.payment-phone>a{font:800 27px 'Manrope',sans-serif;letter-spacing:.4px;color:var(--ink)}
+.copy-number{padding:7px 10px;border:1px solid #dce3eb;border-radius:20px;background:#fff;color:#53657a;font:700 10px 'DM Sans',sans-serif;cursor:pointer}
+.copy-number:hover{border-color:var(--blue);color:var(--blue)}
+.account-holder{padding:13px;border:1px solid #e7edf4;border-radius:8px;background:#f7f9fc}
+.account-holder small,.account-holder strong{display:block}
+.account-holder small{color:var(--muted);font-size:10px;margin-bottom:4px}
+.account-holder strong{font-size:13px;color:var(--ink)}
+.activation-time{display:inline-block;margin:14px 0 0;padding:7px 11px;border-radius:6px;background:#fff6d7;color:#695721;font-size:10px}
+.payment-steps h4{font-size:15px;margin:0 0 15px}
+.payment-steps ol{list-style:none;padding:0;margin:0 0 17px;counter-reset:payment-step}
+.payment-steps li{counter-increment:payment-step;position:relative;padding-left:41px;margin-bottom:15px;min-height:34px}
+.payment-steps li:before{content:counter(payment-step);position:absolute;left:0;top:0;width:29px;height:29px;display:grid;place-items:center;border-radius:50%;background:var(--blue);color:white;font-size:12px;font-weight:800}
+.payment-steps li strong,.payment-steps li span{display:block}
+.payment-steps li strong{font-size:11px;margin-bottom:3px}
+.payment-steps li span{color:var(--muted);font-size:10px;line-height:1.6}
+.whatsapp-button{width:100%;justify-content:space-between;background:#25d366;color:#073b25}
+.subscription-assurances{max-width:980px;margin:25px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.subscription-assurances article{padding:18px 14px;border:1px solid #e7edf4;border-radius:10px;background:#fff;text-align:center}
+.subscription-assurances article>span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#eaf1ff;color:var(--blue);font-weight:800;margin-bottom:9px}
+.subscription-assurances h4{font-size:12px;margin:0 0 6px}
+.subscription-assurances p{font-size:10px;line-height:1.6;color:var(--muted);margin:0}
+@media(max-width:680px){.subscription-grid{grid-template-columns:1fr}.subscription-card,.subscription-featured{padding:25px 21px}.subscription-featured{padding-top:46px}.subscription-card .plan-description{min-height:0}.plan-price-wrap .plan-price{font-size:35px}.payment-panel{padding:26px 19px}.payment-heading h3{font-size:21px}.payment-grid{grid-template-columns:1fr;gap:25px}.payment-details{padding:20px 13px}.payment-phone{gap:7px}.payment-phone>a{font-size:24px}.copy-number{font-size:9px;padding:7px 8px}.subscription-assurances{grid-template-columns:1fr}.subscription-assurances article{padding:16px}.recommended-badge{font-size:8px}}
